@@ -1,0 +1,357 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#main-page{
+    /* 백그라운드 */
+    background:url(image/bg.jpg) no-repeat center center;
+    background-size:cover;
+    height:85vh;
+
+}
+.main-navi{
+    padding: 0 151.5px;
+    height:80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-navi .logo{
+    height:80px;
+    display:flex;
+    align-items:center;
+}
+.main-navi .logo i {
+    font-size:40px;
+    margin-right:10px;
+}
+.main-navi .logo a{
+    text-decoration: none;
+    font-size:24px;
+    color:#ff385c;
+    font-weight:2rem;
+    display:flex;
+    font-weight:900;
+}
+.main-navi .search{
+    width: 300px;
+    height:48px;
+    border:1px solid #ddd;
+    border-radius:24px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    outline:none;
+    padding:0 10px;
+   
+}
+.search:hover{
+    box-shadow: #888;
+}
+.main-navi .search .text{
+    padding:0 16px;
+    font-size:14px;
+    font-weight: 600;
+}
+.main-navi .search .r-icon{
+    background-color:#ff385c;
+    border-radius:50%;
+    padding:8px;
+    color:white;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.item{
+    background: transparent;
+    border: 0px;
+    display:inline-block;
+    font-size: 14px;
+    font-weight:600;
+    padding:15px;
+    color:black;
+    text-decoration:none;
+    position: relative;
+    white-space: nowrap;
+    z-index:1;
+}
+#main-page .item:hover{
+    background-color:rgb(241, 241, 241);
+    border-radius:25px;
+}
+.item2{
+    margin-left:5px;
+    border-radius:25px;
+    border:1px solid rgb(224, 224, 224);
+    padding:12px;
+    color:black;
+    text-decoration:none;
+}
+.item2:hover{
+    box-shadow: 10px #888;
+}
+.main-title{
+    align-items:center;justify-content:flex-start;
+    position:relative;
+    width: 100%;
+    display:flex;
+    margin: 146px 80px 40px 80px;
+}
+.main-title .travel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.main-title .travel .now{
+    width:330px;
+    height:112px;
+    color:#fff;
+    font-size:51px;
+    font-weight:900;
+    letter-spacing:-0.05em;
+}
+.main-title .travel .around{
+    margin-top:42px;
+    padding:7px 15px;
+    background-color: white;
+    width:170px;
+    height:30px;
+    border-radius: 10px;
+    font-size:14px;
+    font-weight:600;
+}
+
+#local{
+    height:272;
+}
+
+#local .localname{
+    margin:64px 20px;
+    padding: 0 80px;
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+#local .localname .localname2{
+    display:flex;
+    justify-content: flex-start;
+    margin-right:8px;
+    margin-bottom:16px;
+    position:relative;
+}
+
+#local .localname .local-pic{
+    width:64px;
+    height:64px;
+    margin-right:5px;
+    border-radius: 5px;
+}
+
+#local .localname .local-text{
+    display:flex;
+    flex-direction:column;
+    margin-left:0px;
+    padding:10px;
+
+}
+#everywhere{
+    padding:0 80px;
+    margin-bottom:48px;
+}
+#everywhere .trvliving{
+    padding-bottom:16px;
+    color:#222; 
+    font-size:32px;
+    font-weight:900;
+    line-height: 36px;
+}
+
+#everywhere .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+    margin:8px 0;
+}
+
+#everywhere .pic{
+    border-radius:10px;
+}
+#everywhere .big{
+    font-size:18px;
+    font-weight:600;
+}
+
+#online-life{
+    background-color: #000;
+    padding:64px 80px 80px 80px;
+    color:white;
+    position: relative;
+}
+#online-life .online{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#online-life .bigtext{
+    font-size:32px;
+    font-weight:900;
+}
+#online-life .btn{
+    border:1px solid white;
+    padding:7px 15px;
+    color:white;
+    width:118px;
+    height:34px;
+    background-color: black;
+    font-size:14px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+#online-life .grid{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#online-life .gray{
+    background-color: rgb(34, 34, 34);
+    color:white;
+    border-radius:20px;
+    margin:10px;
+    position:relative;
+    
+}
+#online-life .gray:first-child{
+    grid-area: 1 / 1 / span 2 / auto ;
+}
+
+#online-life .gray:nth-child(2){
+    grid-area: 1 / 2 / auto / auto;
+}
+
+#online-life .gray:nth-child(3) {
+    grid-area: 1 / 3 / auto / auto;
+}
+
+
+#online-life .gray:nth-child(4){
+    grid-area: 2 / 2 / auto / span 2
+}
+
+#online-life .gray img {
+    width: 100%;
+    border-radius:20px;
+}
+
+#online-life .img{
+    border-radius:20px;
+    width:100%;
+}
+#online-life .text{
+    padding:16px;
+    position: absolute;
+    bottom:0px;
+}
+#host{
+    margin:64px 80px;
+}
+
+#host .milion{
+    padding-bottom:16px;
+    color:#222; 
+    font-size:32px;
+    font-weight:900;
+    line-height: 36px;
+}
+
+#host .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+    margin:8px 0;
+}
+
+#host .pic{
+    max-width:520px;
+    border-radius:10px;   
+}
+#host .big{
+    font-size:18px;
+    font-weight:600;
+}
+
+#list{
+    height:407px;
+    background-color: #f7f7f7;
+    border-top:1px solid #ddd;
+    padding:0 80px;
+    margin:0 auto;
+}
+#list .content{
+    padding:48px 48px;
+    height:305px;
+    display:flex;
+    justify-content: space-around;
+    
+}
+#list h4{
+    margin-bottom:20px;
+    font-size:12px;
+    font-weight:900;
+}
+#list ul.list{
+    list-style: none;
+}
+#list ul.list li{
+    margin-bottom:20px;
+    font-size:14px;
+    font-weight:500;
+}
+#ft{
+    padding:24px 80px;
+    background-color: #f7f7f7;
+}
+#ft .info{
+    display: flex;
+    justify-content: space-between;
+    font-size:14px;
+    padding:24px;
+    height:40px;
+    margin:0 80px;
+    border-top:1px solid #ddd;
+    position:relative;
+}
+#ft .right{
+    width:420px;
+    position:relative;
+}
+#ft .lancur{
+    position: absolute; right:220px;
+    font-weight:550;
+    
+}
+#ft .txt{
+    margin-left:8px;
+    margin-right:16px; 
+    text-decoration:underline;
+}
+
+
+#ft .icons{
+    position: absolute; right:0;
+    display:flex;
+    width:200px;
+    justify-content: space-evenly;
+}
